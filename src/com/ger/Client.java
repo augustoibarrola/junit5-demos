@@ -1,7 +1,9 @@
-package com.ger.client;
+package com.ger;
 
 import java.util.logging.Level;
 import java.util.logging.Logger;
+
+import com.ger.calculator.Calculator;
 
 public class Client {
 	
@@ -10,7 +12,7 @@ public class Client {
 	public static void main(String[] args) {
 		Calculator calc = new Calculator();
 		
-		int sum = calc.addition(10, 10);
+		int sum = calc.add(10, 10);
 		
 		logger.log(Level.INFO, "SUM: {0}", sum);
 	}

@@ -10,7 +10,7 @@ import java.util.Arrays;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
-import com.ger.client.Calculator;
+import com.ger.calculator.Calculator;
 
 class CalculatorTest {
 	
@@ -18,7 +18,7 @@ class CalculatorTest {
 
 	@Test
 	void additionTest() {
-		assertEquals(20, calc.addition(10, 10));
+		assertEquals(20, calc.add(10, 10));
 	}
 
 	@Test
@@ -48,20 +48,20 @@ class CalculatorTest {
 		int x = 100, y = 0;
 		
 		assumeTrue(y > 0);
-		assertEquals(5, calc.addition(x, y));
+		assertEquals(5, calc.add(x, y));
 	}
 	
 	@Test
 	void assumeFalseTest() {
 		int x = 100, y = 10;
 		assumeFalse(y > 0);
-		assertEquals(10, calc.addition(x, y));
+		assertEquals(10, calc.add(x, y));
 	}
 	
 	@Test
 	void assumeTrueOSTest() {
 		assumeTrue(System.getProperty("os.name").startsWith("Mac"));
-		assertEquals(5, calc.division(100, 20));
+		assertEquals(5, calc.divide(100, 20));
 	}
 	
 	@Test
@@ -69,9 +69,9 @@ class CalculatorTest {
 		int x = 100, y = 10;
 		
 		assumingThat(y > 0, () -> {
-			assertEquals(10, calc.addition(x, y));
-			assertNotEquals(100, calc.addition(x, y));
-			assertEquals(100, calc.addition(x, y));
+			assertEquals(10, calc.add(x, y));
+			assertNotEquals(100, calc.add(x, y));
+			assertEquals(100, calc.add(x, y));
 		});
 	}
 	

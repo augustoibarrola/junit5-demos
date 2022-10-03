@@ -11,7 +11,7 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.TestInfo;
 
-import com.ger.client.Calculator;
+import com.ger.calculator.Calculator;
 
 class TestFixtureDemo {
     
@@ -50,25 +50,25 @@ class TestFixtureDemo {
 
     @Test
     void additionSuccessTest() {
-        actual = calc.addition(a, b);
+        actual = calc.add(a, b);
         assertEquals(50, actual);
     }
     
     @Test
     void additionFailureTest() {
-        actual = calc.addition(a, b);
+        actual = calc.add(a, b);
         assertEquals(40, actual);
     }
     
     @Test
     void multiplicationSuccessTest() {
-        actual = calc.multipilication(a, b);
+        actual = calc.multiply(a, b);
         assertEquals(600, actual);
     }
     
     @Test
     void multiplicationFailureTest() {
-        actual = calc.multipilication(a, b);
+        actual = calc.multiply(a, b);
         assertEquals(400, actual);
     }
 
