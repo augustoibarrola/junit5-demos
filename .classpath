@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="JUnit5-A/src"/>
+	<classpathentry kind="src" path="JUnit5-B/src"/>
+	<classpathentry kind="src" path="JUnit5-C/src"/>
+	<classpathentry kind="src" path="JUnit5-D/src"/>
+	<classpathentry excluding="com/ger/test/add/|com/ger/test/|com/ger/test/multiply/|com/ger/test/subtract/" kind="src" path="JUnit5-General/src"/>
+	<classpathentry excluding="add/|multiply/|subtract/" kind="src" path="JUnit5-General/src/com/ger/test"/>
+	<classpathentry kind="src" path="JUnit5-General/src/com/ger/test/add"/>
+	<classpathentry kind="src" path="JUnit5-General/src/com/ger/test/multiply"/>
+	<classpathentry kind="src" path="JUnit5-General/src/com/ger/test/subtract"/>
+	<classpathentry kind="output" path="JUnit5-A/bin"/>
+</classpath>
