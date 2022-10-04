@@ -66,6 +66,8 @@ public class Calculator {
 ```java
 package com.ger.test;
 
+import static org.junit.jupiter.api.Assertions.*;
+
 import java.time.Duration;
 import java.time.temporal.ChronoUnit;
 import java.util.concurrent.TimeUnit;
