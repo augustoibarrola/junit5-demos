@@ -19,5 +19,9 @@ public class Calculator {
 		
 		return x / y;
 	}
+	
+	public void delay(long time) throws InterruptedException {
+	    Thread.sleep(time * 1000);
+	}
 
 }
